@@ -9,13 +9,15 @@ namespace MovieList
 {
     public class Movie
     {
-        public string Title;
-        public int ReleaseYear;
+        public string Title { get; set; }
+        public int ReleaseYear { get; set; }
+        public string rtScore { get; set; }
 
-        public Movie(string title, int releaseyear)
+        public Movie(string title, int releaseyear, string RTScore)
         {
             Title = title;
             ReleaseYear = releaseyear;
+            rtScore = RTScore;
 
         }
 
